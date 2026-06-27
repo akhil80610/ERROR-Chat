@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ERROR Chat</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ERROR Chat</h1>
+<h2 class="sub">Summerize Errors</h2>
+
+<textarea
+id="prompt"
+placeholder="Paste your ERROR....."
+></textarea>
+
+<button onclick="sendPrompt()">
+Send
+</button>
+
+<h2>Response</h2>
+
+<div id="response">
+
+</div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script src="/static/script.js"></script>
+
+</body>
+
+</html>
