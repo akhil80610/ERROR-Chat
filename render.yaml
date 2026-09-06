@@ -1,0 +1,15 @@
+# Exported from Render on 2026-09-06T12:50:44Z
+version: "1"
+services:
+- type: web
+  name: ERROR-Chat
+  runtime: python
+  repo: https://github.com/akhil80610/ERROR-Chat
+  plan: free
+  envVars:
+  - key: GROQ_API_KEY
+    sync: false
+  region: singapore
+  buildCommand: pip install -r requirement.txt
+  startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+  autoDeployTrigger: commit
